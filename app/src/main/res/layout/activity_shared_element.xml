@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slmns.animationpro2.SharedElementActivity"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:id="@+id/click_reveal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_titel"
+        android:text="Share"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:transitionName="share_shared"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/activity_titel">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:layout_weight="1"
+            android:src="@drawable/animation_icon"
+            android:transitionName="logo_shared"
+            android:id="@+id/logo_reveal"
+            />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:layout_weight="1"
+            android:src="@drawable/myphoto"
+            android:transitionName="profile_pic_shared"
+            />
+
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit_btn"
+        android:text="Go Back"
+        android:layout_below="@+id/textview2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="51dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Transition is Awesome."
+        android:id="@+id/textview2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
